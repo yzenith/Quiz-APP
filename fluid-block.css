@@ -1,0 +1,16 @@
+
+/* main css */
+main::before,
+main::after {
+  display: table;
+  content: "";
+}
+main {
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+.content.box {
+  padding-left: 1.041066666%;
+  padding-right: 1.041066666%;
+}

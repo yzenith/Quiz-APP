@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Slabo 27px', serif;
+  font-size: 18px;
+  color: white;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body{
+  max-width: 1000px;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  background: linear-gradient(#9198e5, #ca91e5);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+button[type="submit"]{
+  background-color: #61dafb;
+  color: black;
+}
+
+/* toggle hide css*/
+.toggle-hide {
+  /* display: none; */
+}
+
+
+
+/* header css*/
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  opacity: 1;
+  z-index: 1;
+}
+nav > header {
+  position: absolute;
+  left: 5%;
+  top: 28%;
+}
+nav > .quiz-info {
+  position: absolute;
+  right: 5%;
+  top: 28%;
+}
+nav .quiz-info > progress {
+  border: 1px solid white;
+  border-radius: 3px;
+  max-width: 50px;
+}
+nav .quiz-info > .score {
+  margin-left: 5px;
+}
+
+/* for bigger screen */
+@media screen and (mix-width: 640px) {
+  nav .quiz-info progress {
+    max-width: 150px;
+  }
+}
+
+/* start page css */
+.start-page {
+  width: 100%;
+  height: 300px;
+  margin-top: 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  background-color: black;
+  opacity: 0.8;
+  text-align: center;
+  padding: 50px;
+}
+.start-page button {
+  min-width: 75px;
+  height: 35px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #61dafb;
+  color: black;
+  /* font-size: 20px; */
+}
+
+/* question-page css */
+.question-page {
+  margin-top: 40px;
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  padding: 15px;
+}
+.question-page form {
+  padding: 20px;
+}
+.question-page form header {
+  margin-bottom: 5px;
+}
+.question-page form fieldset {
+  border: none;
+}
+.question-page form .option-line {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.question-page form label {
+  display: inline-block;
+  margin-top: 5px;
+}
+.question-page form input {
+  display: inline-block;
+}
+.question-page form button[type="submit"] {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+/* feedback page css */
+.feedback-page {
+  margin-top: 40px;
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  padding: 25px;
+  text-align: center;
+}
+.feedback-page button {
+  margin-top: 5px;
+}
+
+/* final page css */
+.final-page {
+  margin-top: 40px;
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  padding: 25px;
+  text-align: center;
+}
